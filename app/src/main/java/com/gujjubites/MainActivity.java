@@ -99,7 +99,13 @@ public class MainActivity extends AppCompatActivity
             public void onCancelled(DatabaseError databaseError) {
             }
         });
+        // to check whether first news is bookmarked or not
+        if(db.getBookMarks(bookmarks_key.get(mRecyclerView.getCurrentPosition())))
+            menu.findItem(R.id.action_bookmark).setIcon(R.drawable.ic_bookmark_border_blue_24dp);
 
+        else
+            menu.findItem(R.id.action_bookmark).setIcon(R.drawable.ic_bookmark_border_white_24dp);
+        //to check whether the pages are bookmarked or not, as user scroll
         mRecyclerView.addOnPageChangedListener(new RecyclerViewPager.OnPageChangedListener() {
             @Override
             public void OnPageChanged(int i, int i1) {
