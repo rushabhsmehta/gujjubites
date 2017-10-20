@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_home_black_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_home_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_bookmark_border_black_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_bookmark_border_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_bookmark_border_white_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_bookmark_border_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_perm_contact_calendar_black_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_perm_contact_calendar_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_arrow_upward_black_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_arrow_upward_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_settings_black_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_settings_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\MyApplication\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi\\ic_bookmark_border_blue_24dp.png",
+        "source": "C:\\Users\\admin\\MyApplication\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_bookmark_border_blue_24dp.png"
+    }
+]
