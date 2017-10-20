@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,20 +37,10 @@ public class CustomSwiperAdapter extends RecyclerView.Adapter<CustomSwiperAdapte
     public void onBindViewHolder(RecyclerViewHolder holder, final int position) {
 
         //holder.newsImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        Picasso.with(ctx).load(addnews.get(position).getImg_url()).fit().into(holder.newsImage);
+        Glide.with(ctx).load(addnews.get(position).getImg_url()).fitCenter().into(holder.newsImage);
         holder.newsTitle.setText(addnews.get(position).getTitle());
         holder.newsDescription.setText(addnews.get(position).getDescription());
         holder.newsSubmitter.setText("Bites by " + addnews.get(position).getUser());
-        /*holder..setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
-                builder.setTitle(addnews.get(position).getTitle());
-                builder.setMessage(addnews.get(position).getDescription());
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });*/
     }
 
     public int getItemCount() {

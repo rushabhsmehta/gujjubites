@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity
 
         mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
         mRef = FirebaseDatabase.getInstance().getReference().child("approved");
+        mRef.keepSynced(true);
         mRecyclerView = (RecyclerViewPager) findViewById(R.id.list);
         mRecyclerView.setHasFixedSize(true);
         LinearLayoutManager layout = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
@@ -99,13 +100,7 @@ public class MainActivity extends AppCompatActivity
             public void onCancelled(DatabaseError databaseError) {
             }
         });
-        // to check whether first news is bookmarked or not
-        if(db.getBookMarks(bookmarks_key.get(mRecyclerView.getCurrentPosition())))
-            menu.findItem(R.id.action_bookmark).setIcon(R.drawable.ic_bookmark_border_blue_24dp);
-
-        else
-            menu.findItem(R.id.action_bookmark).setIcon(R.drawable.ic_bookmark_border_white_24dp);
-        //to check whether the pages are bookmarked or not, as user scroll
+           //to check whether the pages are bookmarked or not, as user scroll
         mRecyclerView.addOnPageChangedListener(new RecyclerViewPager.OnPageChangedListener() {
             @Override
             public void OnPageChanged(int i, int i1) {
@@ -282,7 +277,7 @@ public class MainActivity extends AppCompatActivity
         String title = newsShowing.get(mRecyclerView.getCurrentPosition()).getTitle();
         String description = newsShowing.get(mRecyclerView.getCurrentPosition()).getDescription();
         sharingIntent.putExtra(Intent.EXTRA_TEXT, "A bite from Gujjubites"
-        + "\n------------\n"+ title + "\n--------------\n" + description + "\n-----------\n\n" + "download this app from wwww.google.com");
+        + "\n------------\n"+ title + "\n--------------\n" + description + "\n-----------\n\n" + "download this app from https://play.google.com/apps/testing/com.gujjubites");
         startActivity(Intent.createChooser(sharingIntent, "Share News"));
     }
 
